@@ -27,7 +27,7 @@ _start:
 
 	mov word [rsp - 6], 0x5c11	; listen on port 4444 (little endian)
 
-	mov word [rsp - 8], 0x2		; AF_INET constant
+	mov byte [rsp - 8], 0x2		; AF_INET constant
 
 	sub rsp, 8		; rsp points at the top of the stack
 

