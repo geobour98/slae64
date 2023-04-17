@@ -7,3 +7,4 @@ The blog posts can be found at:
 - Assignment #2: https://geobour98.github.io/blog/slae64-2-reverse-shell/
 - Assignment #3: https://geobour98.github.io/blog/slae64-3-egg-hunter/
 - Assignment #4: https://geobour98.github.io/blog/slae64-4-custom-encoder/
+- Assignment #5: https://geobour98.github.io/blog/slae64-5-msfvenom-payloads/
