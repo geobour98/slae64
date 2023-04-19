@@ -9,3 +9,4 @@ The blog posts can be found at:
 - Assignment #4: https://geobour98.github.io/blog/slae64-4-custom-encoder/
 - Assignment #5: https://geobour98.github.io/blog/slae64-5-msfvenom-payloads/
 - Assignment #6: https://geobour98.github.io/blog/slae64-6-polymorphic-shellcodes/
+- Assignment #7: https://geobour98.github.io/blog/slae64-7-custom-crypter/
